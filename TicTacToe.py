@@ -12,7 +12,7 @@
 # check tie  
 # flip player
 
-
+print("  TIC-TAC-TOE    ")
 board = ["-", "-", "-",
          "-", "-", "-",
          "-", "-", "-"]
@@ -45,13 +45,13 @@ def play_game():
 
 # The Game Has Ended
   if winner == "X" or winner == "O":
-    print(winner + " Won.")
+    print(" " + winner + " Won.")
   elif winner == None:
-    print("It's A Tie")
+    print(" It's A Tie")
 
 # handle a single turn of arbitary player
 def handle_turn(player):
-  print(player + "'s Turn.")
+  print(" " + player + "'s Turn.")
   position = input("Choose a Position from 1-9 : ")
   value = False
   while not value:
